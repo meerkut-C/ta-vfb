@@ -1,2 +1,23 @@
 # a basic workflow to have README and LICENSE to be
 # copied to the "mark-viewport" dir
+
+name: sync-rdme
+
+on:
+  push:
+    branches: [ main ]
+
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+              # Checks-out under $GITHUB_WORKSPACE + GITHUB_TOKEN
+      - uses: actions/checkout@v2
+      - name: copy-our-files-if-necessary
+        shell: sh
+        run: |
+          chmod +x .github/workflows/sync-rdme.sh
+          .github/workflows/sync-rdme.sh

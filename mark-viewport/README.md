@@ -4,6 +4,7 @@ colored folding margin on the left.
 
 https://user-images.githubusercontent.com/6675617/140378747-ab6189c7-7fd6-43c1-876d-fdd2c073df19.mp4
 
+[![sync-rdme](https://github.com/meerkut-C/ta-vfb/actions/workflows/sync.yml/badge.svg)](https://github.com/meerkut-C/ta-vfb/actions/workflows/sync.yml)
 
 ## Install
 
